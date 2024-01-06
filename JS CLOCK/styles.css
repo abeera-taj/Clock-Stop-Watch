@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(216, 184, 245);
+}
+.clock,.clock2,.clock3,.clock4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pixelify Sans';
+}
+main{
+    border: 3px solid rgb(82, 3, 82);
+    border-radius: 9px;
+padding-top: 2em;
+padding-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 15em;
+    margin-right: 15em;
+box-shadow: 12px 12px 2px 1px rgb(94, 52, 94);
+}
+h1::selection{
+    color: rgb(82, 3, 82);
+    background-color: white;
+}
+/* responsivenesss */
+@media only screen and (max-width: 600px) {
+    main{
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.stopwatchdata h1, h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pixelify Sans';
+}
+.stopwatchdata button{
+    border: 3px solid rgb(82, 3, 82);
+    border-radius: 20px;
+padding-top: 1em;
+padding-bottom: 1em;
+padding-right: 1.5em;
+padding-left: 1.5em;
+margin-top: 1em;
+margin-left: 19em;
+box-shadow: 12px 12px 2px 1px rgb(94, 52, 94);
+font-family: 'pixelify sans';
+font-weight: bold;
+}
+

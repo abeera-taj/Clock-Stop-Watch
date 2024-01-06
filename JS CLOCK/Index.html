@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pixelify+Sans:wght@400;500;600;700&family=Work+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./icon.png" type="image/x-icon" />
+    <!-- <link rel="Javascript" href="app.js"> -->
+  </head>
+  <body>
+    <br />
+    <main>
+      <article>
+        <h1
+          id="show-time"
+          style="text-align: center; font-family: 'Pixelify Sans'"
+        >
+          The Current Time is:
+        </h1>
+      </article>
+      <br />
+      <br />
+      <div class="clock">
+        <!-- Day -->
+        <h1 id="demo2" style="padding-right: 1.5em"></h1>
+        <span id="day"></span>
+
+        <!-- Month -->
+        <h1 id="demo" style="padding-right: 1.5em"></h1>
+        <span id="month"></span>
+
+        <!-- Date -->
+        <h1 id="demo3" style="padding-right: 1em"></h1>
+        <span id="date"></span>
+      </div>
+      <div class="clock2">
+        <span id="day1" style="padding-right: 4em"></span>
+        <span id="month1" style="padding-right: 6.5em"></span>
+        <span id="date1" style="padding-right: 2em"></span>
+      </div>
+      <br />
+      <!-- Heading  of Minutes, Hours and Seconds -->
+      <div class="clock3">
+        <h1 id="demo4" style="padding-right: 1.5em"></h1>
+        <h1 id="demo5" style="padding-right: 1.5em"></h1>
+        <h1 id="demo6" style="padding-right: 1em"></h1>
+      </div>
+      <div class="clock4">
+        <span id="hours" style="padding-right: 7em"></span>
+        <span id="minutes" style="padding-right: 9em"></span>
+        <span id="seconds" style="padding-right: 4em"></span>
+      </div>
+    </main>
+    <div class="stopwatchdata">
+      <h1>Stop Watch</h1>
+      <div class="stopwatch">
+        <h2 id="timestamp">00:00:00</h2>
+        <button onclick="startStopwatch()">Start</button>
+        <button onclick="stopStopwatch()">Stop</button>
+        <button onclick="resetStopwatch()">Reset</button>
+      </div>
+    </div>
+    <!-- Linking JavaScript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
